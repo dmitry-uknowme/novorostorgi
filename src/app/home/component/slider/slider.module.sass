@@ -1,0 +1,55 @@
+._Slider
+    background: linear-gradient(to right, #00aaff,#0060ad)
+    height: 600px
+    margin-top: 2rem
+    position: relative
+.map
+    background: url('../../../../assets/slider/map.png')
+    background-position: -10% 48%
+    background-repeat: no-repeat
+    // filter: blur(1px)
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    &::after
+        content: ""
+        background: #000
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        opacity: 0.1
+.title
+    z-index: 1
+    position: absolute
+    top: 10%
+    left: 5%
+    display: inline-block
+    color: #fff
+    // background: #0060ad
+    font-size: 3rem
+    font-weight: 400
+
+    // animation: neon 1s infinite
+    span
+        text-shadow: 1px 1px 5px #fff, 1px 1px 5px #ccc
+        font-weight: 700
+
+.search
+    position: absolute
+    bottom: 10%
+    right: 10%
+    display: flex
+    width: 680px
+    height: 62px
+    &__input
+        border-radius: 0.5em 0 0 0.5em
+        font-size: 1.8rem
+        padding: 0 1.6rem
+    &__btn
+        padding-left: 2rem
+        padding-right: 2rem
+        border-radius: 0 0.5em 0.5em 0
