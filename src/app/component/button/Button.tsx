@@ -7,7 +7,7 @@ export enum ButtonColorScheme {
 }
 
 export interface ButtonProps {
-  title: string;
+  title: string | React.ReactNode;
   onClick?: () => any;
   colorScheme: ButtonColorScheme;
   className?: string;
