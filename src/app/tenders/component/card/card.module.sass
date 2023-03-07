@@ -1,5 +1,74 @@
+$accent-color: #0060ad
+
+._Card
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    font-size: 0.85rem
+    line-height: 0.85rem
+    padding: 1rem 1.6rem
+    border: 1px solid #bbb
+    line-height: 1.05
+
+.main
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 100%
+
+.number
+    text-decoration: underline
+
+.status
+    align-items: center
+    &_circle
+        border-radius: 50%
+        width: 12px
+        height: 12px
+        // padding: 6px
+        border: 1px solid var(--bs-success)
+    .row
+        &__key
+
+        &__value
+            color: var(--bs-success)
+
+.title
+    flex-direction: column
+
+.price
+    flex-direction: column
+    line-height: 1.5
+    .row
+        &__key
+        &__value
+            font-size: 1.1rem
+            font-weight: 900
+            color: $accent-color
+
+.section
+    .row
+        &__value
+            color: $accent-color
+            font-weight: 700
+.method
+    .row
+        &__value
+            color: $accent-color
+            font-weight: 700
+
+.date_review
+    flex-direction: column
+
 .row
+    display: flex
     &__key
     &__value
 
 .customer
+    flex-direction: column
+
+.btn
+    margin-top: 1rem
+    width: 100%
+    padding: 0.2rem
