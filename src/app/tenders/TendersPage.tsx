@@ -1,5 +1,6 @@
 import MainTemplate from "../MainTemplate";
 import TenderCard, { ITenderCard } from "./component/card/Card";
+import TendersSearch from "./component/search/Search";
 
 const tenders: ITenderCard[] = [
   {
@@ -8,9 +9,9 @@ const tenders: ITenderCard[] = [
     method_localized: "Конкурентный отбор",
     number: 150,
     price: "price",
-    price_localized: "2 600,89",
+    price_localized: "2 600 841,50 ₽",
     registry_number: "3214214124",
-    date_review: "2023 08-09-2022",
+    date_review: "08-03-2023 17:00",
     section: "section",
     section_localized: "223-ФЗ",
     status: "STATUS",
@@ -23,10 +24,26 @@ const TendersPage = () => {
   return (
     <MainTemplate>
       <div className="container">
-        <div className="col-md-8">
-          {tenders.map((tender) => (
-            <TenderCard tender={tender} />
-          ))}
+        <div className="row">
+          <div className="col-md-8">
+            <TendersSearch />
+            {tenders.map((tender) => (
+              <>
+                <div className="mt-4">
+                  <TenderCard tender={tender} />
+                </div>
+                <div className="mt-4">
+                  <TenderCard tender={tender} />
+                </div>
+                <div className="mt-4">
+                  <TenderCard tender={tender} />
+                </div>
+                <div className="mt-4">
+                  <TenderCard tender={tender} />
+                </div>
+              </>
+            ))}
+          </div>
         </div>
       </div>
     </MainTemplate>

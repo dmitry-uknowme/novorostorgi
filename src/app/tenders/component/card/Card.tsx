@@ -51,13 +51,15 @@ const TenderCard: React.FC<TenderCardProps> = ({ tender }) => {
                 </div>
               </div>
             </div>
-            <div className={`${styles.row} ${styles.title}`}>
-              <div className={styles.row__key}>Наименование</div>
-              <div className={styles.row__value}>{tender.title}</div>
-            </div>
-            <div className={`${styles.row} ${styles.customer}`}>
-              <div className={styles.row__key}>Заказчик</div>
-              <div className={styles.row__value}>{tender.customer_name}</div>
+            <div className="d-flex flex-column">
+              <div className={`${styles.row} ${styles.title}`}>
+                <div className={styles.row__key}>Наименование</div>
+                <div className={styles.row__value}>{tender.title}</div>
+              </div>
+              <div className={`${styles.row} ${styles.customer}`}>
+                <div className={styles.row__key}>Заказчик</div>
+                <div className={styles.row__value}>{tender.customer_name}</div>
+              </div>
             </div>
             <div className="row mt-1">
               <div className="col-md-5">

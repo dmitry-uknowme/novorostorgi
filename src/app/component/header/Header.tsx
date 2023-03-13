@@ -2,6 +2,7 @@ import styles from "./header.module.sass";
 import Logo from "../../../assets/logo.png";
 import Button, { ButtonColorScheme } from "../button/Button";
 import ButtonGradient from "../button/gradient/ButtonGradient";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -13,7 +14,9 @@ const Header = () => {
           </div>
           <div className="col-md-5">
             <ul className={styles.nav__list} role="navigation">
-              <li className={styles.nav__item}>Закупки</li>
+              <Link to={"/tenders"}>
+                <li className={styles.nav__item}>Закупки</li>
+              </Link>
               <li className={styles.nav__item}>Тарифы</li>
               <li className={styles.nav__item}>О площадке</li>
               <li className={styles.nav__item}>Помощь</li>

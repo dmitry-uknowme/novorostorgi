@@ -15,6 +15,7 @@ specifiers:
   eslint-plugin-n: ^15.0.0
   eslint-plugin-promise: ^6.0.0
   eslint-plugin-react: ^7.32.2
+  mol_data_all: ^1.1.627
   react: ^18.2.0
   react-dom: ^18.2.0
   react-router-dom: ^6.8.1
@@ -24,6 +25,7 @@ specifiers:
 
 dependencies:
   bootstrap: 5.2.3_@popperjs+core@2.11.6
+  mol_data_all: 1.1.627
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-router-dom: 6.8.1_biqbaboplfbrettd7655fr4n2y
@@ -1990,6 +1992,10 @@ packages:
   /minimist/1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
     dev: true
+
+  /mol_data_all/1.1.627:
+    resolution: {integrity: sha512-m3kgCwR2za/BlAjnbaWPQEU4XiVLfVHps8vfhxhkjXj+AQJRnfYTGpCNYFoaaIcJEC6pNLrRpC0k2/Mhi161zQ==}
+    dev: false
 
   /ms/2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}

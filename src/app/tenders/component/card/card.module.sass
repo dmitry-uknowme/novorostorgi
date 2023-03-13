@@ -1,11 +1,15 @@
-$accent-color: #0060ad
+$accent-color: #156ab1
+// $accent-color: #0060ad
+$mute-color: #878787
 
 ._Card
     display: flex
     flex-direction: column
     justify-content: space-between
-    font-size: 0.85rem
-    line-height: 0.85rem
+    font-size: 0.9rem
+    line-height: 0.9rem
+    // font-size: 1.06rem
+    // line-height: 1.06rem
     padding: 1rem 1.6rem
     border: 1px solid #bbb
     line-height: 1.05
@@ -17,6 +21,7 @@ $accent-color: #0060ad
     height: 100%
 
 .number
+    font-size: 1rem
     text-decoration: underline
 
 .status
@@ -35,12 +40,17 @@ $accent-color: #0060ad
 
 .title
     flex-direction: column
-
-.price
-    flex-direction: column
-    line-height: 1.5
     .row
         &__key
+            color: $mute-color
+        &__value
+            font-size: 1.05rem
+.price
+    flex-direction: column
+    line-height: 1.2
+    .row
+        &__key
+            color: $mute-color
         &__value
             font-size: 1.1rem
             font-weight: 900
@@ -48,25 +58,44 @@ $accent-color: #0060ad
 
 .section
     .row
+        &__key
+            color: $mute-color
         &__value
             color: $accent-color
             font-weight: 700
 .method
     .row
+        &__key
+            color: $mute-color
         &__value
             color: $accent-color
             font-weight: 700
 
 .date_review
     flex-direction: column
+    line-height: 1.3
+    .row
+        &__key
+            color: $mute-color
+        &__value
+            font-weight: 700
 
+.timer
+    margin-top: 0.5rem
+    .row
+        &__key
+            color: $mute-color
+        &__value
+            font-weight: 700
 .row
     display: flex
     &__key
     &__value
 
 .customer
+    color: $mute-color
     flex-direction: column
+    margin-top: 0.3rem
 
 .btn
     margin-top: 1rem

@@ -1,0 +1,32 @@
+$key-color: #9d9d9d
+$value-color: #303030
+$section-color1: #f9f9f9
+$section-color2: #f4f4f4
+
+$ratio-size: 0.65
+
+._Card
+
+.section
+    padding: 2rem 1.6rem
+    &:nth-child(2n+1)
+        background: $section-color1
+    &:nth-child(2n)
+        background: $section-color2
+    &__row
+        display: flex
+        flex-direction: column
+        margin-top: 1rem
+        P
+    &__key
+        font-size: 1.275rem
+        font-size: calc(1.5rem * $ratio-size)
+        // font-size: calc((30px / 16px) * 0.65)px
+        color: $key-color
+    &__value
+        font-size: calc(1.875rem * $ratio-size)
+        color: $value-color
+    &__title
+        font-size: calc(2.25rem * $ratio-size)
+        text-align: left
+        font-weight: 700
